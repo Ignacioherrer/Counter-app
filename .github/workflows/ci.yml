@@ -16,8 +16,8 @@ jobs:
         fetch-depth: 0 # Necessary to fetch all tags and history
 
 ################################################################
-###               DETERMINE NEXT VERSION                     ###
-###   Used for creating new releases and image tags          ###
+##               DETERMINE NEXT VERSION                     ##
+##   Used for creating new releases and image tags          ##
 ################################################################
 
     - name: Determine Next Version
