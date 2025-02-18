@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - development  # Adjust the branch as needed
+      - development  # Adjust the branch as needed.
 
 jobs:
   deploy:
@@ -71,5 +71,5 @@ jobs:
         # Pull and run the Docker container on EC2
         $SSH_COMMAND "cd /home/ubuntu/docker/ && docker pull $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG && docker compose -f docker-compose.yml up -d --force-recreate"
 
-        # Cleanup PEM key
+        # Cleanup PEM key.
         rm -f ec2.pem
